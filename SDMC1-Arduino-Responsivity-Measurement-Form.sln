@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDMC1-Arduino-Responsivity-Measurement-Form", "SDMC1-Arduino-Responsivity-Measurement-Form\SDMC1-Arduino-Responsivity-Measurement-Form.csproj", "{0A3C4587-D3B2-4C1C-A501-D083AF80F300}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A3C4587-D3B2-4C1C-A501-D083AF80F300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A3C4587-D3B2-4C1C-A501-D083AF80F300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A3C4587-D3B2-4C1C-A501-D083AF80F300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A3C4587-D3B2-4C1C-A501-D083AF80F300}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB5E3BF4-CDE7-45EF-85C7-0B6581F4E1F8}
+	EndGlobalSection
+EndGlobal
