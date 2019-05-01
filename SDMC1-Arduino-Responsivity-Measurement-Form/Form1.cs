@@ -16,7 +16,8 @@ namespace SDMC1_Arduino_Responsivity_Measurement_Form
     public partial class Form1 : Form
     {
         int moves = 0;
-        int scanLength = 12000;
+        int scanLength = 1600;
+        int scanStartPosition = 8210;
         int homeDistance = 12100;
         int timeoutMS = 5000;
 
@@ -353,7 +354,7 @@ namespace SDMC1_Arduino_Responsivity_Measurement_Form
                         SDMC1SerialPort.DataReceived += SDMC1SerialPort_DataReceived;
                         ArduinoSerialPort.DataReceived -= ScanArduino_DataReceived;
                         ArduinoSerialPort.DataReceived += ArduinoSerialPort_DataReceived;
-                        SDMC1SerialPort.Write("R0\r");
+                        SDMC1SerialPort.Write("R"+ scanStartPosition + "\r");
                         HomeButton.Invoke(new MethodInvoker(delegate
                         {
                             HomeButton.Enabled = true;
@@ -400,7 +401,7 @@ namespace SDMC1_Arduino_Responsivity_Measurement_Form
             ScanButton.Enabled = false;
             SDMC1Message = "";
             ArduinoMessage = "";
-            SDMC1SerialPort.Write("R0\r");
+            SDMC1SerialPort.Write("R" + scanStartPosition + "\r");
             SDMC1SerialPort.Write(" \r");
         }
 
